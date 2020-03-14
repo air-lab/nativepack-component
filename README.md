@@ -1,4 +1,4 @@
-# NativePack Compopent
+# NativePack Component
 
 Simple native webcomponent class
 
