@@ -6,7 +6,6 @@ import pkg from './package.json'
 
 export default {
   input: './index.mjs',
-  exports: 'named',
   plugins: [
     resolve(), // so Rollup can find `ms`
     commonjs(), // so Rollup can convert `ms` to an ES module
@@ -17,9 +16,10 @@ export default {
       sourcemap: 'inline',
       name: 'Component',
       file: pkg.browser,
-      format: 'umd'
+      format: 'umd',
+      exports: 'named'
     },
-    { file: pkg.common, format: 'cjs', sourcemap: true },
+    { file: pkg.common, format: 'cjs', sourcemap: true, exports: 'named' },
     { file: pkg.module, format: 'es', sourcemap: true }
   ]
 }
