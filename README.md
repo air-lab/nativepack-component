@@ -39,7 +39,7 @@ export default Component
 
 ```js
 import { html } from "lit-html";
-import Component from "./mycomponent";
+import Component from "./mycomponent"
 
 class HelloWorld extends Component {
   static get state() {
@@ -76,5 +76,7 @@ class HelloWorld extends Component {
   }
 }
 
-HelloWorld.define('hello-world', HelloWorld);
+HelloWorld
+  .define('hello-world', HelloWorld)
+  .mount()
 ```
