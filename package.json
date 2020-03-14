@@ -13,7 +13,8 @@
     "pretest": "npm run build"
   },
   "files": [
-    "dist"
+    "dist",
+    "lib"
   ],
   "repository": {
     "type": "git",
