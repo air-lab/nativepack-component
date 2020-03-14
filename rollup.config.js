@@ -13,7 +13,7 @@ export default {
   ],
   output: [
     {
-      sourcemap: 'inline',
+      sourcemap: true,
       name: 'Component',
       file: pkg.browser,
       format: 'umd',
