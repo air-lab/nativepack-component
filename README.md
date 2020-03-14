@@ -1,6 +1,19 @@
-# Nativepack Compopent
+# NativePack Compopent
 
 Simple native webcomponent class
+
+## Build
+
+```sh
+npm i
+npm run build
+```
+
+## Installation from GitHub
+
+```sh
+npm i -S git+https://github.com/air-lab/nativepack-component.git#v1.0.0-beta
+```
 
 ## How to use
 
