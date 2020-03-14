@@ -35,13 +35,31 @@ class HelloWorld extends Component {
         type: Number,
         value: 1
       },
+      world: {
+        type: String,
+        value: 'World'
+      },
       user: {
         type: Object,
         value: {
           name: "Foo"
         }
       }
-    };
+    }
+  }
+
+  render() {
+    const { world, counter } = this.state
+
+    return html`
+      <div>
+        Hello ${world} ${counter}
+        <button @click="${this.increaseCounter}">Increase</button>
+      </div>`
+  }
+
+  increaseCounter() {
+    this.state.counter = this.state.counter + 1
   }
 }
 
