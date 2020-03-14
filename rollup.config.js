@@ -1,0 +1,25 @@
+import resolve from '@rollup/plugin-node-resolve'
+import commonjs from '@rollup/plugin-commonjs'
+import { terser } from 'rollup-plugin-terser'
+
+import pkg from './package.json'
+
+export default {
+  input: './index.mjs',
+  exports: 'named',
+  plugins: [
+    resolve(), // so Rollup can find `ms`
+    commonjs(), // so Rollup can convert `ms` to an ES module
+    terser({ sourcemap: true })
+  ],
+  output: [
+    {
+      sourcemap: 'inline',
+      name: 'Component',
+      file: pkg.browser,
+      format: 'umd'
+    },
+    { file: pkg.common, format: 'cjs', sourcemap: true },
+    { file: pkg.module, format: 'es', sourcemap: true }
+  ]
+}
