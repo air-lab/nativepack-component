@@ -61,6 +61,14 @@ class HelloWorld extends Component {
     }
   }
 
+  created() {
+    // Component created hook. You should be able access to state
+  }
+
+  mounted() {
+    // Component mounted hook. You should be able access to element by document.querySelector and etc...
+  }
+
   render() {
     const { world, counter } = this.state
 
