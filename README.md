@@ -12,7 +12,7 @@ npm run build
 ## Installation from GitHub
 
 ```sh
-npm i -S git+https://github.com/air-lab/nativepack-component.git#v1.0.0-beta
+npm i -S git+https://github.com/air-lab/nativepack-component.git#v1.0.0-beta2
 ```
 
 ## How to use
