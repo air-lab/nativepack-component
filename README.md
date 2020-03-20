@@ -42,6 +42,10 @@ import { html } from "lit-html";
 import Component from "./mycomponent"
 
 class HelloWorld extends Component {
+  static get tagName() {
+    return 'hello-world'
+  }
+
   static get state() {
     return {
       counter: {
@@ -85,6 +89,5 @@ class HelloWorld extends Component {
 }
 
 HelloWorld
-  .define('hello-world', HelloWorld)
-  .mount()
+  .define()
 ```
