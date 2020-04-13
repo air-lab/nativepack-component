@@ -1,6 +1,6 @@
 # NativePack Component
 
-Simple native webcomponent class
+Simple native web component class
 
 ## Build
 
