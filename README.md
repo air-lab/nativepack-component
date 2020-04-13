@@ -1,6 +1,6 @@
 # NativePack Component
 
-Simple native webcomponent class
+Simple native web component class
 
 ## Build
 
@@ -12,7 +12,7 @@ npm run build
 ## Installation from GitHub
 
 ```sh
-npm i -S git+https://github.com/air-lab/nativepack-component.git#v1.0.0-beta
+npm i -S git+https://github.com/air-lab/nativepack-component.git#v1.0.0-beta2
 ```
 
 ## How to use
@@ -42,6 +42,10 @@ import { html } from "lit-html";
 import Component from "./mycomponent"
 
 class HelloWorld extends Component {
+  static get tagName() {
+    return 'hello-world'
+  }
+
   static get state() {
     return {
       counter: {
@@ -85,6 +89,5 @@ class HelloWorld extends Component {
 }
 
 HelloWorld
-  .define('hello-world', HelloWorld)
-  .mount()
+  .define()
 ```
