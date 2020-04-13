@@ -1,1 +1,9 @@
-{}
+{
+    "compilerOptions": {
+        "target": "es2020", // define to your liking
+        "baseUrl": ".",
+        "module": "es2020",
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": false, 
+    }
+}
